@@ -1,0 +1,13 @@
+{
+  "name": "CHT Document System Automation",
+  "description": "公文系統自動化",
+  "version": "1.0",
+  "manifest_version": 3,
+  "permissions": ["tabs", "cookies"],
+  "content_scripts": [
+    {
+      "matches": ["https://emsodas.cht.com.tw/Portal/Pages/WaitingDocument.aspx"],
+      "js": ["script.js"]
+    }
+  ]
+}
